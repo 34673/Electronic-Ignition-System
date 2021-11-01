@@ -1,6 +1,12 @@
-enum{Baked,Blended,Logarithmic};
-struct MapData{
+typedef enum{Baked,Blended,Logarithmic,MaxMapType};
+typedef struct{
     char mode;
-    int size;
-    char* values;
-};
+    int dataSize;
+    short valuesCount;
+    Values* values;
+}Map;
+short valuesFields = 2;
+typedef struct{
+    short rpm;
+    char advance;
+}Values;

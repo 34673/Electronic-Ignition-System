@@ -1,14 +1,14 @@
 #include "Data.h"
 #include "stdlib.h"
-#include "../Math/Math.h"
+#include "../Utilities/Float.h"
 char Data_ReadByte(Data* Data){
     Data->position = Data->end ? (int)Clamp((int)Data->start,(int)Data->end,(int)Data->position + sizeof(char)) : (int)Data->position + sizeof(char);
-    return (char)*Data->position;
+    return *(char*)Data->position;
 }
 short Data_ReadShort(Data* Data){}
 int Data_ReadInt(Data* Data){
     Data->position = Data->end ? (int)Clamp((int)Data->start,(int)Data->end,(int)Data->position + sizeof(int)) : (int)Data->position + sizeof(int);
-    return (int)*Data->position;
+    return *(int*)Data->position;
 }
 long Data_ReadLong(Data* Data){}
 float Data_ReadFloat(Data* Data){}

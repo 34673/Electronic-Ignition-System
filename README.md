@@ -1,5 +1,5 @@
 # Electronic Ignition System @ [GitHub](https://github.com/34673/Electronic-Ignition-System)
-*This repository is currently hosting pseudo-code and unfinished scripts.*
+*This repository is currently hosting pseudo-code and work-in-progress scripts. Goals and milestones are subject to change at any moment as well.*
 
 Broad strokes for an engine ignition system with variable timing based on maps/curves.
 
