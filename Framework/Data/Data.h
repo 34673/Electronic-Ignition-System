@@ -1,7 +1,7 @@
 typedef struct{
-    void* start;
-    void* position;
-    void* end;
+	void* start;
+	void* position;
+	void* end;
 }Data;
 char Data_ReadByte(Data* Data);
 short Data_ReadShort(Data* Data);

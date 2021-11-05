@@ -2,13 +2,13 @@
 #include "stdlib.h"
 #include "../Utilities/Float.h"
 char Data_ReadByte(Data* Data){
-    Data->position = Data->end ? (int)Clamp((int)Data->start,(int)Data->end,(int)Data->position + sizeof(char)) : (int)Data->position + sizeof(char);
-    return *(char*)Data->position;
+	Data->position = Data->end ? (int)Clamp((int)Data->start,(int)Data->end,(int)Data->position + sizeof(char)) : (int)Data->position + sizeof(char);
+	return *(char*)Data->position;
 }
 short Data_ReadShort(Data* Data){}
 int Data_ReadInt(Data* Data){
-    Data->position = Data->end ? (int)Clamp((int)Data->start,(int)Data->end,(int)Data->position + sizeof(int)) : (int)Data->position + sizeof(int);
-    return *(int*)Data->position;
+	Data->position = Data->end ? (int)Clamp((int)Data->start,(int)Data->end,(int)Data->position + sizeof(int)) : (int)Data->position + sizeof(int);
+	return *(int*)Data->position;
 }
 long Data_ReadLong(Data* Data){}
 float Data_ReadFloat(Data* Data){}
@@ -18,8 +18,8 @@ unsigned short Data_ReadUShort(Data* Data){}
 unsigned int Data_ReadUInt(Data* Data){}
 unsigned long Data_ReadULong(Data* Data){}
 void Data_ReadBytes(Data* Data,char* output,int size){
-    if(Data->end && size > Data->end){size = (int)Data->end - (int)Data->position;}
-    memcpy(output,Data->position,size);
+	if(Data->end && size > Data->end){size = (int)Data->end - (int)Data->position;}
+	memcpy(output,Data->position,size);
 }
 void Data_ReadShorts(Data* Data){}
 void Data_ReadInts(Data* Data){}
