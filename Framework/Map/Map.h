@@ -5,7 +5,6 @@ typedef struct{
     short valuesCount;
     Values* values;
 }Map;
-short valuesFields = 2;
 typedef struct{
     short rpm;
     char advance;
